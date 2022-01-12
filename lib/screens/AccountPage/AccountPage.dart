@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-Widget AccountPage () {
+Widget AccountPage (size,context) {
   return Container(
     child: Text("Account Page"),
   );

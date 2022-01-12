@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-Widget FavouritePage () {
+Widget FavouritePage (size,context) {
   return Container(
     child: Text("Favourite Page"),
   );

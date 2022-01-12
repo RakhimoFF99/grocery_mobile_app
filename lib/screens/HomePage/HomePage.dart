@@ -17,8 +17,10 @@ class _HomePageState extends State<HomePage> {
   List pages = [ShopPage,ExplorePage,CartPage,FavouritePage,AccountPage];
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
-      body:  SafeArea(child:  pages[indexNumber](),) ,
+      body:  SingleChildScrollView(
+          child: SafeArea(child:  pages[indexNumber](size,context),)) ,
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.only(topLeft: Radius.circular(15),topRight: Radius.circular(15)),

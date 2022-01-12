@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'package:grocery/screens/HomePage/HomePage.dart';
 import 'package:grocery/screens/WelcomePage/WelcomePage.dart';
 
 void main() {
