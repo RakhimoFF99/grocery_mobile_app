@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery/screens/HomePage/HomePage.dart';
 import 'package:grocery/screens/WelcomePage/WelcomePage.dart';
 
 void main() {
@@ -15,12 +16,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        splashFactory: InkRipple.splashFactory,
-        primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.white
-      ),
-      home: const WelcomePage(),
+          splashFactory: InkRipple.splashFactory,
+          primarySwatch: Colors.blue,
+          scaffoldBackgroundColor: Colors.white),
+      home: const HomePage(),
     );
   }
 }
-
