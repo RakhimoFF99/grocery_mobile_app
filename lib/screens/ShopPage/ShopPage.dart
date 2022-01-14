@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery/Constants.dart';
+import 'package:grocery/screens/ProductPage/ProductPage.dart';
 import 'package:grocery/screens/ShopPage/components/ProductCard.dart';
 
 Widget ShopPage (size,context) {
@@ -49,19 +50,19 @@ Widget ShopPage (size,context) {
                       shrinkWrap: true,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
-                        childAspectRatio: size.height * 0.00090,
+                        childAspectRatio: size.height * 0.000750 ,
                         crossAxisSpacing: 15,
                       ),
                       itemCount:6,
                       itemBuilder: (context, index) {
                         return GestureDetector(
                             onTap: () {
-
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => ProductPage(index:index)));
                             },
                             child: Column(
 
                               children: [
-                                ProductCard(index: 1,)
+                                ProductCard(index: index,)
                               ],
                             ));
                       }),

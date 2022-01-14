@@ -11,9 +11,7 @@ class ProductCard extends StatelessWidget {
 
     return Column(
       children: [
-        Hero(
-          tag: index,
-          child: Container(
+        Container(
               padding: EdgeInsets.symmetric(horizontal: 10),
               decoration: BoxDecoration(
                 border: Border.all(color: hintColor.withOpacity(0.3)),
@@ -23,13 +21,16 @@ class ProductCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    height: size.height / 5,
-                    padding: EdgeInsets.symmetric(vertical: 15),
-                    alignment: Alignment.topCenter,
-                    child: Image.asset(
-                      'assets/images/banan.png',
-                      width: size.width / 1.8,
+                  Hero(
+                    tag:index,
+                    child: Container(
+                      height: size.height / 5,
+                      padding: EdgeInsets.symmetric(vertical: 15),
+                      alignment: Alignment.topCenter,
+                      child: Image.asset(
+                        'assets/images/red_apple_small.png',
+                        width: size.width / 1.8,
+                      ),
                     ),
                   ),
                   Text(
@@ -76,7 +77,7 @@ class ProductCard extends StatelessWidget {
                   )
                 ],
               )),
-        ),
+
       ],
     );
   }
