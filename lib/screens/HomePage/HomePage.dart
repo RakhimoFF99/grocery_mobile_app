@@ -26,8 +26,8 @@ class _HomePageState extends State<HomePage> {
           borderRadius: BorderRadius.only(topLeft: Radius.circular(15),topRight: Radius.circular(15)),
           boxShadow:  [
           BoxShadow(
-              color: Colors.orange,
-              blurRadius: 13,
+              color: Colors.blue,
+              blurRadius: 5,
               offset: Offset(0.5, 4.0))
           ]
 
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
 
             child: BottomNavigationBar(
               backgroundColor: Colors.white,
-              selectedItemColor: Colors.red,
+              selectedItemColor: Colors.blue,
               currentIndex:indexNumber,
               onTap: (index) {
                 setState(() {
@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                 BottomNavigationBarItem(
                    icon: Padding(
                      padding: const EdgeInsets.only(bottom: 5),
-                     child: SvgPicture.asset('assets/icons/home_icon.svg',color: indexNumber == 0 ? Colors.red:Colors.black,),
+                     child: SvgPicture.asset('assets/icons/home_icon.svg',color: indexNumber == 0 ? Colors.blue:Colors.black,),
                    ),
                     label: "Shop",
 
@@ -59,27 +59,27 @@ class _HomePageState extends State<HomePage> {
                 BottomNavigationBarItem(
                     icon:Padding(
                       padding: const EdgeInsets.only(bottom: 5),
-                      child: SvgPicture.asset('assets/icons/explore_icon.svg',color: indexNumber == 1 ? Colors.red:Colors.black,),
+                      child: SvgPicture.asset('assets/icons/explore_icon.svg',color: indexNumber == 1 ? Colors.blue:Colors.black,),
                     ),
 
                     label: "Explore"),
                 BottomNavigationBarItem(
                     icon:Padding(
                       padding: const EdgeInsets.only(bottom: 5),
-                      child: SvgPicture.asset('assets/icons/cart_icon.svg',color: indexNumber == 2 ? Colors.red:Colors.black,),
+                      child: SvgPicture.asset('assets/icons/cart_icon.svg',color: indexNumber == 2 ? Colors.blue:Colors.black,),
                     ),
 
                     label: "Cart"),
                 BottomNavigationBarItem(
                     icon: Padding(
                       padding: const EdgeInsets.only(bottom: 5),
-                      child: SvgPicture.asset('assets/icons/favourite_icon.svg',color: indexNumber == 3 ? Colors.red:Colors.black,),
+                      child: SvgPicture.asset('assets/icons/favourite_icon.svg',color: indexNumber == 3 ? Colors.blue:Colors.black,),
                     ),
                     label: "Favourite"),
                 BottomNavigationBarItem(
                     icon:Padding(
                       padding: const EdgeInsets.only(bottom: 5),
-                      child: SvgPicture.asset('assets/icons/account_icon.svg',color: indexNumber == 4 ? Colors.red:Colors.black,),
+                      child: SvgPicture.asset('assets/icons/account_icon.svg',color: indexNumber == 4 ? Colors.blue:Colors.black,),
                     ),
                     label: "Account")
               ],

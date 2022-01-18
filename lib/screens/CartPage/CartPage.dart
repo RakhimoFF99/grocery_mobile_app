@@ -19,13 +19,13 @@ Widget CartPage (size,context) {
           child: Column(
             children: [
               CartCard(),
-              SizedBox(height: 30,),
+
               CartCard(),
-              SizedBox(height: 30,),
+
               CartCard(),
-              SizedBox(height: 30,),
+
               CartCard(),
-              SizedBox(height: 30,),
+
 
 
             ],

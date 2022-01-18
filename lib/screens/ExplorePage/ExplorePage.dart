@@ -39,7 +39,7 @@ Widget ExplorePage(size, context) {
                 shrinkWrap: true,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
-                  childAspectRatio: size.height * 0.000750,
+                  childAspectRatio: size.height * 0.000800,
                   crossAxisSpacing: 20,
                 ),
                 itemCount: 6,
